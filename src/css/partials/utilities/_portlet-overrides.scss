@@ -11,6 +11,13 @@
 		line-height: 1.3;
 	}
 
+	&:hover,
+	&.active {
+		> .portlet-content-editable {
+			border: none;
+		}
+	}
+
 }
 
 .portlet-borderless-container {
