@@ -14,7 +14,8 @@
 	&:hover,
 	&.active {
 		> .portlet-content-editable {
-			border: none;
+			//border: none;
+			border-color: transparent;
 		}
 	}
 
