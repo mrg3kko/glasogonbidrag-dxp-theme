@@ -6,19 +6,9 @@
 // All portlets
 .portlet {
 
-	.portlet-topper {
-		.portlet-title {
-			img {
-				display: none;
-			}
-		}
-		.portlet-topper-toolbar {
-		}
-	}
-
-	.portlet-content {
-		.portlet-body {
-		}
+	.portlet-title-text {
+		font-size: 1.3em;
+		line-height: 1.3;
 	}
 
 }
@@ -26,6 +16,27 @@
 .portlet-borderless-container {
   min-height: 0;
 }
+
+// Hide portlet title when not in edit mode
+.custom-admin-controls-closed {
+
+	.portlet {
+
+		.portlet-topper {
+			display: none;
+		}
+
+		.portlet-title-text {
+			display: none;
+		}
+
+		.portlet-content-editable {
+			padding: 0;
+		}
+
+	}
+}
+
 
 // Web Content Display and Asset Publisher
 .portlet-journal-content,

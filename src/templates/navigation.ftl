@@ -20,8 +20,8 @@
       			<#assign nav_item_attr_data_hotkeymethod = "" />
       			<#assign nav_item_attr_data_hotkeytitle = "" />
 
-      			<#assign dataHotkey = expandoValueLocalService.getData(company_id, "com.liferay.portal.model.Layout", "CUSTOM_FIELDS", "hotkey", nav_item.getLayout().getPlid(), "")  />
-      			<#assign dataHotkeyMethod = expandoValueLocalService.getData(company_id, "com.liferay.portal.model.Layout", "CUSTOM_FIELDS", "hotkey-method", nav_item.getLayout().getPlid(), "")  />
+      			<#assign dataHotkey = expandoValueLocalService.getData(company_id, "com.liferay.portal.kernel.model.Layout", "CUSTOM_FIELDS", "gb-hotkey", nav_item.getLayout().getPlid(), "")  />
+      			<#assign dataHotkeyMethod = expandoValueLocalService.getData(company_id, "com.liferay.portal.kernel.model.Layout", "CUSTOM_FIELDS", "gb-hotkey-method", nav_item.getLayout().getPlid(), "")  />
 
       			<#if dataHotkey?has_content && dataHotkeyMethod?has_content>
       				<#assign nav_item_attr_data_hotkey = "data-hotkey='" + dataHotkey + "'" />
@@ -30,12 +30,12 @@
       			</#if>
 
             <#assign nav_item_css_class = nav_item_css_class + " gb-icon" />
-            <#assign iconClass = expandoValueLocalService.getData(company_id, "com.liferay.portal.model.Layout", "CUSTOM_FIELDS", "icon-class", nav_item.getLayout().getPlid(), "")!  />
+            <#assign iconClass = expandoValueLocalService.getData(company_id, "com.liferay.portal.model.Layout", "CUSTOM_FIELDS", "gb-icon-class", nav_item.getLayout().getPlid(), "")!  />
             <#if iconClass?has_content>
               <#assign nav_item_css_class = nav_item_css_class + " " + iconClass />
             </#if>
 
-            <#assign iconClassExpando  = expandoValueLocalService.getValue(company_id, "com.liferay.portal.model.Layout", "CUSTOM_FIELDS", "icon-class", nav_item.getLayout().getPlid())! />
+            <#assign iconClassExpando  = expandoValueLocalService.getValue(company_id, "com.liferay.portal.kernel.model.Layout", "CUSTOM_FIELDS", "gb-icon-class", nav_item.getLayout().getPlid())! />
             <#if iconClassExpando?has_content>
               <#assign nav_item_css_class = nav_item_css_class + " gb-icon-" + iconClassExpando.getData() />
             </#if>

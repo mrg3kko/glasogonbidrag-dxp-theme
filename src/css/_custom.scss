@@ -40,6 +40,7 @@ body {
 @import 'partials/utilities/scaffolding';
 @import 'partials/utilities/portlet-overrides';
 
+@import 'partials/atoms/body';
 @import 'partials/atoms/buttons';
 @import 'partials/atoms/checkbox';
 @import 'partials/atoms/container';
@@ -48,11 +49,15 @@ body {
 @import 'partials/atoms/icon-link';
 @import 'partials/atoms/images';
 @import 'partials/atoms/inputs';
+@import 'partials/atoms/label';
 @import 'partials/atoms/link-btn';
 @import 'partials/atoms/link-icon';
+@import 'partials/atoms/links';
 @import 'partials/atoms/node-info';
 @import 'partials/atoms/paragraphs';
+@import 'partials/atoms/select';
 @import 'partials/atoms/table';
+@import 'partials/atoms/textarea';
 @import 'partials/atoms/wrapper';
 
 @import 'partials/molecules/accounting-table';
