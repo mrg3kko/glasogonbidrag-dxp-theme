@@ -37,34 +37,6 @@
               <#assign nav_item_attr_data_hotkeytitle = "data-hotkeytitle='" + nav_item.getName() + "'" />
             </#if>
 
-
-            <#--
-      			<#assign dataHotkey = expandoValueLocalService.getData(company_id, "com.liferay.portal.kernel.model.Layout", "CUSTOM_FIELDS", "gb-hotkey", nav_item.getLayout().getPlid(), "")  />
-      			<#assign dataHotkeyMethod = expandoValueLocalService.getData(company_id, "com.liferay.portal.kernel.model.Layout", "CUSTOM_FIELDS", "gb-hotkey-method", nav_item.getLayout().getPlid(), "")  />
-
-      			<#if dataHotkey?has_content && dataHotkeyMethod?has_content>
-      				<#assign nav_item_attr_data_hotkey = "data-hotkey='" + dataHotkey + "'" />
-      				<#assign nav_item_attr_data_hotkeymethod = "data-hotkeymethod='" + dataHotkeyMethod + "'" />
-      				<#assign nav_item_attr_data_hotkeytitle = "data-hotkeytitle='" + nav_item.getName() + "'" />
-      			</#if>
-            -->
-
-
-            <#--
-            <#assign nav_item_css_class = nav_item_css_class + " gb-icon" />
-            <#assign iconClass = expandoValueLocalService.getData(company_id, "com.liferay.portal.kernel.model.Layout", "CUSTOM_FIELDS", "gb-icon-class", nav_item.getLayout().getPlid(), "default-foo")!  />
-            <#if iconClass?has_content>
-              <#assign nav_item_css_class = nav_item_css_class + " " + iconClass />
-            </#if>
-            -->
-
-            <#--
-            <#assign iconClassExpando  = expandoValueLocalService.getValue(company_id, "com.liferay.portal.kernel.model.Layout", "CUSTOM_FIELDS", "gb-icon-class", nav_item.getLayout().getPlid())! />
-            <#if iconClassExpando?has_content>
-              <#assign nav_item_css_class = nav_item_css_class + " gb-icon-" + iconClassExpando.getData() />
-            </#if>
-            -->
-
       			<li ${nav_item_attr_selected} class="${nav_item_css_class}" id="layout_${nav_item.getLayoutId()}" role="presentation">
       				<a aria-labelledby="layout_${nav_item.getLayoutId()}" ${nav_item_attr_has_popup} href="${nav_item.getURL()}" ${nav_item.getTarget()} role="menuitem" ${nav_item_attr_data_hotkey} ${nav_item_attr_data_hotkeymethod} ${nav_item_attr_data_hotkeytitle}>
       					<span>${nav_item.getName()}</span>
