@@ -22,7 +22,7 @@
 
 <#assign theme_setting_allow_hotkeys = theme_display.getThemeSetting("allow-hotkeys")! />
 
-<#if theme_setting_allow_hotkeys = "true">
+<#if theme_setting_allow_hotkeys = "on">
 	<#assign allow_hotkeys = true />
 </#if>
 
@@ -30,7 +30,7 @@
 
 <#assign theme_setting_is_login_page = theme_display.getThemeSetting("is-login-page")! />
 
-<#if theme_setting_is_login_page = "true">
+<#if theme_setting_is_login_page = "on">
 	<#assign is_login_page = true />
 </#if>
 
