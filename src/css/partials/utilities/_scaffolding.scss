@@ -16,6 +16,11 @@
 // Start test
 .glasogonbidrag-portlet {
 
+	.row {
+		margin-left: 0;
+		margin-righ: 0;
+	}
+
 	.gb-full-width-wrap {
 		// "Reset" wrapper padding
 		// Left and right only -5px since .row has -15px margin on left and right
