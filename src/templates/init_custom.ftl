@@ -76,7 +76,7 @@
 
 	</#if>
 
-	<!-- Above does not work on Test. Set always show dockbar when signed in. Should be fixed/debugged. -->
+	<#-- Above does not work on Test. Set always show dockbar when signed in. Should be fixed/debugged. -->
 	<#assign show_dockbar = true />
 
 </#if>
